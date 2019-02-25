@@ -9,7 +9,7 @@ namespace UnitTestProject1
         public void TestMethod1()
         {
             //arrange
-            bil bil = new bil();
+            Bil bil = new Bil();
             // act
             decimal pris = bil.Pris();
             // Assert
@@ -20,7 +20,7 @@ namespace UnitTestProject1
         public void TestMethod2()
         {
             //arrange
-            bil bil = new bil();
+            Bil bil = new Bil();
             // act
             string køretøj = bil.KøreTøj();
             // Assert

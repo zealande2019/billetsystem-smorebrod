@@ -20,5 +20,13 @@ namespace Billetlibary
         {
             return "MC";
         }
+
+        public override decimal prisMedBroBizz()
+        {
+            decimal rabat = 125 * 5 / 100;
+            decimal brobizz = 125 - rabat;
+
+            return brobizz;
+        }
     }
 }
