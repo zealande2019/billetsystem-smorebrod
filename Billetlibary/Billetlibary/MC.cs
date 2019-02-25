@@ -1,18 +1,22 @@
-﻿namespace Billetlibary
+﻿using System;
+using System.Reflection.Metadata.Ecma335;
+
+namespace Billetlibary
 {
-    public class MC
+    public class MC : Køretøj
+
     {
-        public string Nummerplade { get; set; }
+   //  public string Nummerplade { get; set; }
 
-        public DateTime dato { get; set; }
+   //  public DateTime dato { get; set; }
 
-        public decimal pris()
-        {
-            return 125;
+    public override decimal Pris()
+    {
+        return 125;
 
-        }
+    }      
 
-        public string køretøj()
+        public override string KøreTøj()
         {
             return "MC";
         }
