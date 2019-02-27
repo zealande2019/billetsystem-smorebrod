@@ -21,7 +21,10 @@ namespace Billetlibary
         }
 
 
-
+        /// <summary>
+        /// Metode til pris for brobillet, skal overrides 
+        /// </summary>
+        /// <returns>Prisen på en brobillet</returns>
         public abstract decimal Pris();
 
         public abstract string KøreTøj();

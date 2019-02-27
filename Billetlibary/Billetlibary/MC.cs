@@ -6,9 +6,7 @@ namespace Billetlibary
     public class MC : Køretøj
 
     {
-   //  public string Nummerplade { get; set; }
-
-   //  public DateTime dato { get; set; }
+   
 
     public override decimal Pris()
     {
