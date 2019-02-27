@@ -13,7 +13,7 @@ namespace Billetlibary
         /// <returns> Retunere prisen </returns>
         public override decimal Pris()
         {
-            return 240;
+            return 240m;
         }
 
     
@@ -28,17 +28,17 @@ namespace Billetlibary
         // udregner prisen på brobillet med brobizz
         public override decimal prisMedBroBizz()
         {
-            decimal rabat = 240 * 5 / 100;
-            decimal brobizz = 240 - rabat;
+            decimal rabat = Pris() * 5 / 100m;
+            decimal brobizz = Pris() - rabat;
 
             return brobizz;
         }
         
-        public double WeekendsRabat(DateTime day)
+        public decimal WeekendsRabat(DateTime day)
         {
 
-            var result2 = 240 * 0.95;
-            var result = 240 * 0.80;
+            decimal result2 = Pris() * 0.95m;
+            decimal result = Pris() * 0.80m;
             if (day.DayOfWeek == DayOfWeek.Saturday || day.DayOfWeek == DayOfWeek.Sunday)
             {
                 return result;
